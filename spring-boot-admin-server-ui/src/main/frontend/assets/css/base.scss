@@ -68,6 +68,25 @@ body {
   }
 }
 
+.navbar-custom-label {
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: 30px;
+}
+.navbar-custom-label > span {
+  color: white;
+  font-size: 20px;
+}
+.navbar-custom-image {
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: 20px;
+}
+.navbar-custom-image > img {
+  height: 40px;
+  vertical-align: middle;
+}
+
 //Loading spinner
 .section.is-loading,
 .content.is-loading {

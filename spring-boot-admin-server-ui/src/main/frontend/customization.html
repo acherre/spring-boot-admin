@@ -1,6 +1,6 @@
-<div class="navbar-custom-label" style="margin-bottom: auto;margin-left: 30px;margin-top: auto;">
-  <span style="color: white;font-size: 20px;">${customLabel}</span>
+<div th:if="${customLabel != null}" class="navbar-custom-label">
+  <span>${customLabel}</span>
 </div>
-<div class="navbar-custom-logo" style="margin-top: auto;margin-bottom: auto;margin-left: 20px;">
-  <img src="${customImageSrc}" style="height: 40px;vertical-align: middle;">
+<div th:if="${customImageSrc} != null}" class="navbar-custom-image">
+  <img src="${customImageSrc}">
 </div>
