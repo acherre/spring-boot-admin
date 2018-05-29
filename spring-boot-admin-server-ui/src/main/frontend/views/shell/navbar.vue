@@ -28,6 +28,10 @@
           <span/>
           <span/>
         </div>
+
+        <div class="navbar-customization">
+          {customization}
+        </div>
       </div>
       <div class="navbar-menu" :class="{'is-active' : showMenu}">
         <div class="navbar-start"/>
@@ -50,9 +54,12 @@
 </template>
 
 <script>
+  import Customization from '@/services/customization';
+
   export default {
     data: () => ({
-      showMenu: false
+      showMenu: false,
+      customization: ''
     }),
     props: {
       views: {
@@ -67,6 +74,9 @@
         type: null,
         default: null
       }
+    },
+    async created() {
+      customization = await Customization.fetchCustomization();
     },
     mounted() {
       document.documentElement.classList.add('has-navbar-fixed-top');
