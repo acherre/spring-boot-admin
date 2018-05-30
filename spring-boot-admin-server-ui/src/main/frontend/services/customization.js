@@ -15,11 +15,6 @@
  */
 
 import axios from '@/utils/axios';
-import waitForPolyfill from '@/utils/eventsource-polyfill';
-import logtail from '@/utils/logtail';
-import {Observable} from '@/utils/rxjs'
-import uri from '@/utils/uri';
-import _ from 'lodash';
 
 class Customization {
 
